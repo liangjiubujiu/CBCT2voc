@@ -1,8 +1,9 @@
 # CBCT2voc
 ## run
+```Shell
 python label.py
-
-this command helps to create binary masks from gray masks. you will find train.txt, val.txt which are formed by voc data structure.
+```
+This command helps to create binary masks from gray masks. you will find train.txt, val.txt which are formed by voc data structure.
 
 # Application on deeplab v3+
 
