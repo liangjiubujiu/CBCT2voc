@@ -1,2 +1,5 @@
 # CBCT2voc
-this is a preprocessing tool for  transfering .dcm form to png. A voc data structure helps it to complete tooth cbct segmentation.
+## run
+python label.py
+
+this command helps to create binary masks from gray masks. you will find train.txt, val.txt which are formed by voc data structure.
