@@ -116,8 +116,8 @@ if __name__=='__main__':
                     mask = FillHole(img_grey)
                 else:
                     th1 = cv2.adaptiveThreshold(img_grey, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 9, 2)  # 换行符号 \
-                    mask = 255 - th1
-                mask[mask!=0]==255
+                    mask = 255 - th1  
+                mask[mask!=0]=1 #if voc dataset, it is better to use mask[mask!=0]==1 not 255
                 file_path = os.path.join('label',os.path.split(file_path)[-1])
                 cv2.imwrite(file_path, mask)
 
